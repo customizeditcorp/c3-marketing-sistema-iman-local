@@ -1,0 +1,60 @@
+================================================================================
+🎬 REGENERACIÓN DE FOTOS DEL EQUIPO - NANO BANANA V2
+Proyecto: Sistema Imán Local - C3 Marketing
+================================================================================
+✅ API Key configurada
+✅ Directorio de salida: /home/ubuntu/c3-marketing-sistema-iman-local/assets/generated
+✅ Modelo: gemini_2_5_flash con Nano Banana
+✅ Método: referenceImages con data URI
+
+================================================================================
+IMAGEN 1: LUIS CON IPAD MOSTRANDO GBP
+================================================================================
+
+🎨 Generando: 02_luis_tablet_gbp_CORRECTED.png
+   Tag de referencia: @luis
+  📤 Convirtiendo imagen a data URI: /home/ubuntu/c3-marketing-sistema-iman-local/assets/team-photos/luis-arroyo.png
+  ✅ Data URI creado (66 KB)
+  🚀 Enviando request a Runway API...
+  ⏳ Task ID: cdc53fe9-33e7-4d68-982a-90372fdbc8f1
+  ⏳ Esperando generación...
+  ⏳ Status: RUNNING (intento 1/60)
+  ⏳ Status: SUCCEEDED (intento 2/60)
+  📥 Descargando imagen desde: https://dnznrvs05pmza.cloudfront.net/gemini/gemini-2.5-flash-image/images/78642b...
+  ✅ Guardada: /home/ubuntu/c3-marketing-sistema-iman-local/assets/generated/02_luis_tablet_gbp_CORRECTED.png (1056 KB)
+✅ Imagen de Luis generada exitosamente
+
+⏳ Esperando 10 segundos antes de la siguiente generación...
+
+================================================================================
+IMAGEN 2: CARLOS - TRANSFORMACIÓN DE FONDO
+================================================================================
+
+🎨 Generando: 01_carlos_office_background_CORRECTED.png
+   Tag de referencia: @carlos
+  📤 Convirtiendo imagen a data URI: /home/ubuntu/c3-marketing-sistema-iman-local/assets/team-photos/carlos-cordero.jpg
+  ✅ Data URI creado (56 KB)
+  🚀 Enviando request a Runway API...
+  ⏳ Task ID: cb4d52ba-788d-4407-938c-f538447de34b
+  ⏳ Esperando generación...
+  ⏳ Status: RUNNING (intento 1/60)
+  ⏳ Status: SUCCEEDED (intento 2/60)
+  📥 Descargando imagen desde: https://dnznrvs05pmza.cloudfront.net/gemini/gemini-2.5-flash-image/images/3b9b7a...
+  ✅ Guardada: /home/ubuntu/c3-marketing-sistema-iman-local/assets/generated/01_carlos_office_background_CORRECTED.png (1068 KB)
+✅ Imagen de Carlos generada exitosamente
+
+================================================================================
+🎉 REGENERACIÓN COMPLETADA
+📁 Imágenes guardadas en: /home/ubuntu/c3-marketing-sistema-iman-local/assets/generated
+================================================================================
+
+💡 Revisa las imágenes *_CORRECTED.png para verificar que:
+   ✓ Luis mantiene su rostro exacto (Nano Banana preservó identidad)
+   ✓ iPad se ve natural en sus manos
+   ✓ Carlos mantiene su rostro y pose exactos
+   ✓ Fondo de Carlos cambió a oficina profesional
+   ✓ Las ediciones se ven naturales y profesionales
+
+Si las imágenes son correctas, reemplaza las originales.
+
+Costo: 2 imágenes × 5 créditos = 10 créditos = $0.10 USD
