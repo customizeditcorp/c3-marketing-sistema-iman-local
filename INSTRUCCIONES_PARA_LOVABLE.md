@@ -1,1044 +1,979 @@
-# 🎯 INSTRUCCIONES COMPLETAS PARA LOVABLE
-## Landing Page: Sistema Imán Local™ - C3 Marketing
+# 🚀 INSTRUCCIONES COMPLETAS PARA LOVABLE
 
-**Cliente:** C3 Marketing  
-**Producto:** Sistema Imán Local™  
-**Objetivo:** Landing page de conversión para negocios de servicios hispanos en California  
-**Fecha:** Noviembre 2025
+## 📦 PROYECTO: Landing Page Sistema Imán Local™ - C3 Marketing
+
+**Repositorio GitHub:** https://github.com/customizeditcorp/c3-marketing-sistema-iman-local
 
 ---
 
-## 📦 ASSETS DISPONIBLES EN ESTE REPOSITORIO
+## 🎯 OBJETIVO
 
-### Imágenes Generadas (18 total)
-Todas las imágenes están en `/assets/generated/`:
-
-**Fotos del Equipo:**
-- `02_luis_tablet_gbp_CORRECTED.png` - Luis con iPad mostrando GBP (HERO principal)
-- `01_carlos_white_shirt_c3_orange_FINAL.png` - Carlos con logo C3 naranja (opcional para sección equipo)
-
-**Mockups:**
-- `03_google_mobile_search.png` - Búsqueda móvil "landscaping near me"
-- `04_gbp_desktop_dashboard.png` - Dashboard GBP desktop "Martinez Landscaping"
-
-**Timeline 90 Días (3 imágenes):**
-- `05_timeline_mes1_fundacion.png` - Mes 1: Fundación Digital (rojo)
-- `06_timeline_mes2_optimizacion.png` - Mes 2: Optimización (amarillo)
-- `07_timeline_mes3_activacion.png` - Mes 3: Activación (gris)
-
-**4 Pasos del Sistema (4 imágenes):**
-- `08_paso1_fundacion_digital.png` - Laptop con GBP
-- `09_paso2_magnetizacion_local.png` - Imán atrayendo clientes
-- `10_paso3_confianza_visual.png` - Escudo con 5 estrellas
-- `11_paso4_activacion_247.png` - Smartphone con notificaciones
-
-**Badges (3 imágenes):**
-- `12_badge_100_tuyo.png` - Badge "100% TUYO" (rojo)
-- `13_badge_90_dias.png` - Badge "90 DÍAS" (amarillo)
-- `14_badge_sin_ataduras.png` - Badge "SIN ATADURAS" (gris)
-
-### Logos C3
-En `/assets/logos/`:
-- `c3white200x200.svg` - Logo horizontal blanco (USAR EN NAVBAR)
-- `c3Verticalwhite200x200.svg` - Logo vertical blanco
-- `c3orange200x200.png` - Logo horizontal naranja
-- `c3Verticalorange200x200.png` - Logo vertical naranja
-
-### Paleta de Colores
-- `/assets/images/paleta.png` - Imagen de referencia de la paleta
+Crear una landing page de conversión profesional para el **Sistema Imán Local™** de C3 Marketing, dirigida a contratistas hispanos en Estados Unidos que quieren dominar Google Business Profile y atraer clientes locales.
 
 ---
 
-## 🎨 DISEÑO Y ESTILO
+## 📐 WIREFRAME Y ESTRUCTURA
 
-### Paleta de Colores C3 (OBLIGATORIA)
+**Basado en template Figma "Kronix - Digital Agency"** (ver `FIGMA_TEMPLATE_KRONIX_ANALYSIS.md`)
+
+### Layout General:
+- Hero asimétrico (60% texto izq + 40% imagen der)
+- Secciones alternas (blanco / gris claro #E5E5E5)
+- Navbar sticky con logo + CTA
+- Footer completo
+- Responsive mobile-first
+
+---
+
+## 🎨 PALETA DE COLORES C3
 
 ```css
-/* Colores principales */
---primary: #EF4125;        /* Rojo C3 - CTAs, branding */
---secondary: #F9B718;      /* Amarillo C3 - acentos, highlights */
---gray-dark: #58595B;      /* Gris oscuro - texto principal */
---gray-light: #E5E5E5;     /* Gris claro - backgrounds alternos */
---white: #FFFFFF;          /* Blanco - background principal */
---black: #000000;          /* Negro - títulos */
-```
-
-**Uso de colores:**
-- **Rojo (#EF4125):** CTAs principales, logo, elementos de urgencia
-- **Amarillo (#F9B718):** Badges, highlights, timeline Mes 2
-- **Gris oscuro (#58595B):** Texto body, timeline Mes 3
-- **Gris claro (#E5E5E5):** Backgrounds alternos de secciones
-- **Blanco (#FFFFFF):** Background principal
-
-### Tipografía
-
-**Fuentes Google:**
-```html
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+/* Colores Principales */
+--c3-red: #EF4125;          /* CTAs primarios, urgencia */
+--c3-yellow: #F9B718;       /* Badges, highlights, optimismo */
+--c3-gray-dark: #58595B;    /* Texto principal, títulos */
+--c3-gray-light: #E5E5E5;   /* Backgrounds alternos */
+--white: #FFFFFF;           /* Background principal */
 ```
 
 **Uso:**
-- **Headings (H1-H6):** Poppins Bold (700)
-- **Body text:** Open Sans Regular (400)
-- **Tamaños:**
-  - H1: 48-60px (desktop), 32-40px (mobile)
-  - H2: 36-48px (desktop), 28-32px (mobile)
-  - H3: 24-30px
-  - Body: 16-18px
-  - Small: 14px
-
-### Estilo Visual
-
-**Características:**
-- ✅ Profesional pero cálido (no frío corporativo)
-- ✅ Directo y claro (no pretencioso)
-- ✅ Hispano-friendly (accesible, empático)
-- ✅ Orientado a resultados (no genérico)
-
-**Elementos de diseño:**
-- Border radius: 8-12px
-- Sombras sutiles: `box-shadow: 0 4px 6px rgba(0,0,0,0.1)`
-- Espaciado generoso: 60-80px entre secciones
-- Padding interno: 40-60px en cards
+- **CTAs primarios:** Fondo rojo #EF4125, texto blanco
+- **CTAs secundarios:** Borde rojo #EF4125, texto rojo, fondo transparente
+- **Badges:** Rojo (100% Tuyo), Amarillo (90 Días), Gris (Sin Ataduras)
+- **Timeline:** Mes 1 (rojo), Mes 2 (amarillo), Mes 3 (gris)
 
 ---
 
-## 🏗️ WIREFRAME Y ESTRUCTURA
+## 📝 TIPOGRAFÍA
 
-### Inspiración del Template Figma
+- **Headings:** Poppins Bold (700) - Google Fonts
+- **Body:** Open Sans Regular (400) - Google Fonts
+- **Tamaños:** H1 (48-60px), H2 (36-42px), H3 (24-30px), Body (16-18px)
 
-**Referencia:** Digital Agency Landing Page (Figma Community)
-
-**Características clave a implementar:**
-1. **Layout asimétrico** (no centrado genérico)
-2. **Hero potente** con imagen grande + texto a la izquierda
-3. **Secciones alternas** (blanco/gris claro)
-4. **Cards en grid** para beneficios (3 columnas desktop, 1 mobile)
-5. **Timeline visual** (horizontal o vertical según espacio)
-6. **CTAs múltiples** estratégicamente ubicados
-7. **Navbar sticky** con logo + CTA
-8. **Footer completo** con información de contacto
+**CDN:**
+```html
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+```
 
 ---
 
-## 📄 ESTRUCTURA DE LA LANDING (12 SECCIONES)
+## 🖼️ ASSETS VISUALES
 
-### SECCIÓN 1: HERO
+### Ubicación en el Repositorio:
 
-**Layout:**
-- Grid 2 columnas (desktop): Contenido izquierda, imagen derecha
-- Stack vertical (mobile)
+**Foto Hero:**
+- `/assets/team/hero_luis_consulting.png` - Luis asesorando a contratista (cliente de espaldas)
+
+**Fotos del Equipo (4 personas):**
+- `/assets/team/team_carlos_cordero.png` - Carlos (camisa blanca, logo C3 naranja)
+- `/assets/team/team_juan_arroyo.png` - Juan (camisa blanca, logo C3 naranja)
+- `/assets/team/team_maria_cordero.png` - María (camisa coral, logo C3)
+- `/assets/team/hero_luis_consulting.png` - Luis (usar recorte para sección de equipo)
+
+**Mockups y Assets (15 imágenes):**
+- `/assets/generated/03_google_mobile_search.png` - Búsqueda móvil "landscaping near me"
+- `/assets/generated/04_gbp_desktop_dashboard.png` - Dashboard GBP desktop
+- `/assets/generated/05_timeline_mes1_fundacion.png` - Timeline Mes 1
+- `/assets/generated/06_timeline_mes2_optimizacion.png` - Timeline Mes 2
+- `/assets/generated/07_timeline_mes3_activacion.png` - Timeline Mes 3
+- `/assets/generated/08_paso1_fundacion_digital.png` - Paso 1 del sistema
+- `/assets/generated/09_paso2_magnetizacion_local.png` - Paso 2 del sistema
+- `/assets/generated/10_paso3_confianza_visual.png` - Paso 3 del sistema
+- `/assets/generated/11_paso4_activacion_247.png` - Paso 4 del sistema
+- `/assets/generated/12_badge_100_tuyo.png` - Badge "100% Tuyo"
+- `/assets/generated/13_badge_90_dias.png` - Badge "90 Días"
+- `/assets/generated/14_badge_sin_ataduras.png` - Badge "Sin Ataduras"
+
+**Logos C3:**
+- `/assets/logos/c3white200x200.svg` - Logo blanco (navbar)
+- `/assets/logos/c3orange200x200.png` - Logo naranja
+- `/assets/logos/c3Verticalwhite200x200.svg` - Logo vertical blanco
+
+---
+
+## 📋 CONTENIDO COMPLETO - 13 SECCIONES
+
+### **SECCIÓN 1: HERO**
+
+**Layout:** Asimétrico (60% texto izq + 40% imagen der)
 
 **Contenido:**
 
-**Badges (arriba, horizontal):**
-- Mostrar las 3 imágenes de badges en fila
-- `12_badge_100_tuyo.png`
-- `13_badge_90_dias.png`
-- `14_badge_sin_ataduras.png`
-
-**H1:**
+**Título (H1):**
 ```
-De Invisible a Visible en 90 Días
+Domina Google en 90 Días
+Y Convierte Búsquedas Locales en Clientes Reales
 ```
 
-**H2 (subtítulo):**
+**Subtítulo:**
 ```
-Presencia digital completa que atrae clientes locales 24/7, ads-ready desde día 1, 100% tuyo
-```
-
-**Copy de apoyo:**
-```
-¿Pierdes contratos cada mes porque no apareces en Google o no te ves profesional? El Sistema Imán Local™ convierte tu negocio de servicios en un imán de clientes locales en solo 90 días.
+El Sistema Imán Local™ transforma tu Google Business Profile en una máquina de generación de leads 24/7. Sin contratos largos. Sin dependencias. 100% tuyo desde el día uno.
 ```
 
-**CTAs:**
-1. **Primario (rojo):** "Agendar Llamada de Diagnóstico Gratuita"
-2. **Secundario (outline rojo):** "Ver Cómo Funciona ↓" (scroll a #como-funciona)
+**3 Badges (horizontal):**
+1. **100% TUYO** - Imagen: `/assets/generated/12_badge_100_tuyo.png`
+   - Texto: "Todo queda en tu propiedad"
+2. **90 DÍAS** - Imagen: `/assets/generated/13_badge_90_dias.png`
+   - Texto: "Resultados medibles en 3 meses"
+3. **SIN ATADURAS** - Imagen: `/assets/generated/14_badge_sin_ataduras.png`
+   - Texto: "Sin contratos de permanencia"
+
+**2 CTAs:**
+- **Primario:** "Agenda tu Auditoría Gratuita" (rojo #EF4125)
+- **Secundario:** "Ver Cómo Funciona" (outline rojo)
 
 **Imagen:**
-- `02_luis_tablet_gbp_CORRECTED.png`
-- Mostrar grande, con sombra
-- Alt text: "Profesional mostrando Google Business Profile"
+- `/assets/team/hero_luis_consulting.png` - Luis asesorando a contratista
 
 ---
 
-### SECCIÓN 2: PROBLEMA
+### **SECCIÓN 2: PROBLEMA**
 
-**Background:** Gris claro (#E5E5E5)
-
-**H2:**
+**Título (H2):**
 ```
-¿Por Qué Pierdes Clientes Cada Mes?
+¿Por Qué Tu Negocio Sigue Invisible en Google?
 ```
 
-**Copy intro:**
+**Subtítulo:**
 ```
-La realidad dolorosa: estás perdiendo trabajos y contratos porque los clientes ya no contratan al primer número que encuentran.
-```
-
-**Subsección: El Nuevo Proceso de Decisión del Cliente**
-
-**5 Pasos (cards en grid):**
-
-1. **Buscan en Google**
-   - Icon: 🔍 (Search icon)
-   - Copy: "landscaping near me" → Si no apareces, ya perdiste
-
-2. **Comparan Perfiles**
-   - Icon: 👁️ (Eye icon)
-   - Copy: Ven tu competencia con fotos, reseñas, horarios → Si no te ves profesional, te descartan
-
-3. **Visitan Websites**
-   - Icon: 🌐 (Globe icon)
-   - Copy: Verifican que eres legítimo → Si no tienes website o se ve mal, siguiente
-
-4. **Leen Reseñas**
-   - Icon: ⭐ (Star icon)
-   - Copy: Confirman confiabilidad → Sin reseñas = sin confianza
-
-5. **Eligen al Más Confiable**
-   - Icon: 📉 (Trending down icon)
-   - Copy: El que pasó todos los filtros gana el contrato
-
-**Callout Box (destacado con borde rojo):**
-```
-💔 Si tu negocio no aparece o se ve desactualizado digitalmente, simplemente quedas fuera de la competencia.
+Mientras tu competencia aparece primero en Google Maps, tú pierdes clientes cada día. No es tu culpa—es que nadie te enseñó cómo funciona realmente el juego.
 ```
 
-**Los Costos Ocultos (3 cards):**
+**5 Pasos del Proceso de Decisión del Cliente:**
 
-1. **Pierdes dinero:**
-   - 2-10 clientes potenciales cada mes
-   - Contratos que se van a la competencia
+1. **Búsqueda en Google** (95% de los clientes locales empiezan aquí)
+2. **Revisan el Mapa** (Los primeros 3 resultados se llevan el 70% de los clics)
+3. **Comparan Perfiles** (Fotos, reseñas, horarios—todo cuenta)
+4. **Llaman o Visitan** (Solo si confían en lo que ven)
+5. **Contratan** (O se van con tu competencia)
 
-2. **Pierdes tiempo:**
-   - Dependes 100% de referencias (no escalable)
-   - Frustración de hacer buen trabajo pero no conseguir clientes nuevos
+**Callout destacado:**
+```
+💡 Si no estás en los primeros 3 resultados de Google Maps, prácticamente no existes para tus clientes potenciales.
+```
 
-3. **Pierdes oportunidades:**
-   - Barrera de idioma con herramientas digitales
-   - Pagar mensualidades eternas sin ser dueño de nada
+**3 Costos Ocultos de la Invisibilidad:**
+
+1. **Leads Perdidos**
+   - Cada día que no apareces primero, pierdes entre 5-15 clientes potenciales
+   - Valor promedio por cliente: $500-2,000
+
+2. **Competencia Ganando**
+   - Tus competidores con GBP optimizado capturan el 70% del mercado local
+   - Mientras tú dependes del boca a boca
+
+3. **Dinero Desperdiciado**
+   - Gastas en volantes, anuncios y referidos
+   - Pero ignoras el canal #1 donde tus clientes te buscan
 
 ---
 
-### SECCIÓN 3: SOLUCIÓN
+### **SECCIÓN 3: SOLUCIÓN**
 
-**Background:** Blanco
-**ID:** `#como-funciona` (para scroll del CTA hero)
-
-**H2:**
+**Título (H2):**
 ```
-La Solución: Sistema Imán Local™
+El Sistema Imán Local™:
+Tu Google Business Profile Trabajando 24/7
 ```
 
-**Tagline (italic, amarillo):**
+**Subtítulo:**
 ```
-El sistema que convierte tu negocio en un imán de clientes locales
-```
-
-**Copy intro:**
-```
-No vendemos "servicios de marketing digital" genéricos. Implementamos un sistema específico probado con más de 10 negocios de servicios hispanos en California.
+No es magia. Es un sistema probado que convierte tu perfil de Google en un imán de clientes locales—sin trucos, sin atajos, sin dependencias.
 ```
 
-**¿Por Qué Funciona? (4 cards con checkmarks):**
+**4 Razones Por Las Que Funciona:**
 
-1. ✓ **Diseñado para negocios de servicios**
-   - No es teoría. Es un proceso paso a paso probado con contratistas reales.
+1. **Fundación Sólida**
+   - Configuración profesional desde cero
+   - Optimización técnica completa
+   - NAP consistency (Nombre, Dirección, Teléfono)
 
-2. ✓ **En tu idioma**
-   - Sin barreras de comunicación. Todo en español, claro y directo.
+2. **Magnetización Local**
+   - Keywords específicos de tu ciudad
+   - Categorías estratégicas
+   - Geolocalización precisa
 
-3. ✓ **Tú eres el dueño**
-   - No pagas rentas eternas. Todo es tuyo al terminar los 90 días.
+3. **Confianza Visual**
+   - Fotos profesionales que venden
+   - Reseñas gestionadas estratégicamente
+   - Posts semanales optimizados
 
-4. ✓ **Listo para escalar**
-   - Empieza orgánico o acelera con publicidad cuando quieras.
+4. **Activación 24/7**
+   - Respuestas automáticas a preguntas
+   - Mensajería directa configurada
+   - Tracking de llamadas y visitas
 
-**Callout Box (destacado con gradiente rojo-amarillo):**
+**Callout destacado:**
 ```
-🏆 A diferencia de otras agencias que te cobran mensualidades eternas y nunca eres dueño de nada, con el Sistema Imán Local™ TODO es tuyo desde el día 1.
+🎯 DIFERENCIADOR CLAVE: A diferencia de las agencias tradicionales, nosotros te enseñamos el sistema mientras lo implementamos. Tú mantienes el control total desde el día uno.
 ```
 
-**Mockups (2 imágenes lado a lado):**
-- Izquierda: `03_google_mobile_search.png`
-- Derecha: `04_gbp_desktop_dashboard.png`
+**Mockups:**
+- Imagen 1: `/assets/generated/03_google_mobile_search.png` - Búsqueda móvil
+- Imagen 2: `/assets/generated/04_gbp_desktop_dashboard.png` - Dashboard GBP
 
 ---
 
-### SECCIÓN 4: TIMELINE 90 DÍAS
+### **SECCIÓN 4: TIMELINE / JOURNEY - 90 DÍAS EN 3 FASES**
 
-**Background:** Gris claro (#E5E5E5)
-
-**H2:**
+**Título (H2):**
 ```
 Tu Transformación en 90 Días
 ```
 
-**Layout:** 3 cards grandes (alternando imagen izquierda/derecha)
-
-**MES 1: FUNDACIÓN DIGITAL**
-
-**Badge:** "MES 1" (fondo rojo)
-**Días:** 1-30
-**Imagen:** `05_timeline_mes1_fundacion.png`
-
-**Lo que construimos:**
-- ✓ Google Business Profile creado y en verificación
-- ✓ Website profesional publicado
-- ✓ Análisis de competencia y keywords
-- ✓ Brief completo de tu negocio
-
-**Resultado (box rojo claro):**
+**Subtítulo:**
 ```
-🎯 Ya eres visible digitalmente. Los clientes pueden encontrarte.
+Paso a paso, sin sorpresas. Cada mes tiene objetivos claros y resultados medibles.
 ```
+
+**Layout:** 3 cards horizontales (o timeline vertical en mobile)
+
+**MES 1: FUNDACIÓN DIGITAL (Días 1-30)**
+
+**Imagen:** `/assets/generated/05_timeline_mes1_fundacion.png`
+
+**Color:** Rojo #EF4125
+
+**Contenido:**
+- ✅ Auditoría completa de tu presencia digital actual
+- ✅ Configuración profesional de Google Business Profile
+- ✅ Optimización técnica (NAP, categorías, keywords)
+- ✅ Primeras 10-15 fotos profesionales subidas
+- ✅ Configuración de servicios y áreas de cobertura
+
+**Resultado Esperado:**
+"Tu negocio aparece correctamente en Google Maps con información completa y profesional"
 
 ---
 
-**MES 2: OPTIMIZACIÓN**
+**MES 2: OPTIMIZACIÓN LOCAL (Días 31-60)**
 
-**Badge:** "MES 2" (fondo amarillo)
-**Días:** 31-60
-**Imagen:** `06_timeline_mes2_optimizacion.png`
+**Imagen:** `/assets/generated/06_timeline_mes2_optimizacion.png`
 
-**Lo que optimizamos:**
-- ✓ SEO local implementado
-- ✓ 10 keywords estratégicas activas
-- ✓ Contenido refinado
-- ✓ Perfil completamente optimizado
+**Color:** Amarillo #F9B718
 
-**Resultado (box amarillo claro):**
-```
-🎯 Tu presencia digital trabaja a tu favor. Empiezas a destacar.
-```
+**Contenido:**
+- ✅ Estrategia de reseñas implementada
+- ✅ Posts semanales optimizados para búsqueda local
+- ✅ Keywords locales activados
+- ✅ Preguntas y respuestas estratégicas
+- ✅ Integración con tu sitio web (si aplica)
 
----
-
-**MES 3: ACTIVACIÓN COMPLETA**
-
-**Badge:** "MES 3" (fondo gris)
-**Días:** 61-90
-**Imagen:** `07_timeline_mes3_activacion.png`
-
-**Lo que entregas:**
-- ✓ Todas las credenciales (eres dueño 100%)
-- ✓ Capacitación completa
-- ✓ Guía de gestión de reviews
-- ✓ Sistema listo para Google Ads
-
-**Resultado (box gris claro):**
-```
-🎯 Sistema imán completo trabajando 24/7. Listo para escalar.
-```
+**Resultado Esperado:**
+"Comienzas a aparecer en los primeros 5 resultados de búsquedas locales relevantes"
 
 ---
 
-### SECCIÓN 5: BENEFICIOS
+**MES 3: ACTIVACIÓN 24/7 (Días 61-90)**
 
-**Background:** Blanco
+**Imagen:** `/assets/generated/07_timeline_mes3_activacion.png`
 
-**H2:**
-```
-Qué Logras con el Sistema Imán Local™
-```
+**Color:** Gris #58595B
 
-**Grid 3x2 (6 cards con iconos):**
+**Contenido:**
+- ✅ Mensajería directa activada
+- ✅ Respuestas automáticas configuradas
+- ✅ Tracking de llamadas y visitas implementado
+- ✅ Dashboard de métricas entregado
+- ✅ Capacitación final: Cómo mantenerlo tú mismo
 
-1. **🔍 VISIBILIDAD**
-   - **Subtítulo:** Ya no serás invisible
-   - **Copy:** Apareces cuando clientes buscan tu servicio en tu zona. Google Business Profile verificado + Website profesional.
-
-2. **💪 CONFIANZA**
-   - **Subtítulo:** Te verás tan profesional como la competencia
-   - **Copy:** Presencia digital completa que genera credibilidad instantánea. No más perder contratos por verte "pequeño".
-
-3. **🔑 CONTROL**
-   - **Subtítulo:** Eres dueño 100% de todo
-   - **Copy:** Todas las credenciales en tus manos. Si dejas de trabajar con nosotros, te quedas con todo. Sin ataduras.
-
-4. **📈 ESCALABILIDAD**
-   - **Subtítulo:** Listo para crecer cuando quieras
-   - **Copy:** Sistema ads-ready desde día 1. Elige: orgánico (gratis pero más lento) o acelerado (con publicidad).
-
-5. **⏰ 24/7**
-   - **Subtítulo:** Tu negocio trabaja mientras duermes
-   - **Copy:** Website + GBP optimizado atrayendo clientes automáticamente. Ya no dependes solo de referencias.
-
-6. **🇲🇽 SIN BARRERAS**
-   - **Subtítulo:** Todo en español, sin complicaciones
-   - **Copy:** Entendemos tu negocio, tu idioma, tus desafíos. Implementación sin estrés técnico.
+**Resultado Esperado:**
+"Tu GBP genera leads consistentes y tú sabes exactamente cómo mantenerlo funcionando"
 
 ---
 
-### SECCIÓN 6: 4 PASOS DEL SISTEMA
+### **SECCIÓN 5: BENEFICIOS - 6 BENEFICIOS CLAVE**
 
-**Background:** Gris claro (#E5E5E5)
-
-**H2:**
+**Título (H2):**
 ```
-Los 4 Pasos del Sistema Imán Local™
+Por Qué Contratistas Hispanos Eligen el Sistema Imán Local™
 ```
 
-**Layout:** 4 cards grandes (alternando imagen izquierda/derecha)
+**Layout:** Grid de 3 columnas (2 filas) en desktop, 1 columna en mobile
+
+**Beneficio 1: VISIBILIDAD INMEDIATA**
+- **Icono:** 🎯 (o usar ilustración custom)
+- **Título:** Visibilidad Inmediata
+- **Descripción:** Aparece en los primeros resultados de Google Maps en tu ciudad desde el mes 1
+
+**Beneficio 2: CONFIANZA PROFESIONAL**
+- **Icono:** ⭐ (o usar ilustración custom)
+- **Título:** Confianza Profesional
+- **Descripción:** Perfil optimizado con fotos, reseñas y posts que transmiten autoridad
+
+**Beneficio 3: CONTROL TOTAL**
+- **Icono:** 🔑 (o usar ilustración custom)
+- **Título:** Control Total
+- **Descripción:** Todo queda en tu propiedad. Sin dependencias de agencias externas
+
+**Beneficio 4: ESCALABILIDAD**
+- **Icono:** 📈 (o usar ilustración custom)
+- **Título:** Escalabilidad
+- **Descripción:** El sistema crece contigo. Funciona para 1 ubicación o 10
+
+**Beneficio 5: DISPONIBILIDAD 24/7**
+- **Icono:** 🌙 (o usar ilustración custom)
+- **Título:** Disponibilidad 24/7
+- **Descripción:** Tu perfil trabaja mientras duermes, generando leads automáticamente
+
+**Beneficio 6: SIN BARRERAS DE IDIOMA**
+- **Icono:** 🗣️ (o usar ilustración custom)
+- **Título:** Sin Barreras de Idioma
+- **Descripción:** Asesoría en español, adaptada a la realidad del contratista hispano en USA
+
+---
+
+### **SECCIÓN 6: 4 PASOS DEL SISTEMA - CÓMO FUNCIONA**
+
+**Título (H2):**
+```
+Cómo Funciona el Sistema Imán Local™
+```
+
+**Subtítulo:**
+```
+4 pasos simples que transforman tu Google Business Profile en una máquina de generación de leads.
+```
+
+**Layout:** 4 cards numerados (grid 2x2 en desktop, vertical en mobile)
 
 **PASO 1: FUNDACIÓN DIGITAL**
 
-**Número grande:** 01 (gris claro, background)
-**Imagen:** `08_paso1_fundacion_digital.png`
+**Imagen:** `/assets/generated/08_paso1_fundacion_digital.png`
+
+**Número:** 01
+
+**Título:** Fundación Digital
 
 **Descripción:**
-```
-Establecemos tu presencia profesional
-```
+Auditamos tu presencia actual y configuramos tu Google Business Profile desde cero con las mejores prácticas. NAP consistency, categorías estratégicas, y optimización técnica completa.
 
-**Qué hacemos:**
-- Creación de correo Gmail corporativo
-- Compra y configuración de dominio + hosting
-- Brief completo de tu negocio
-- Diseño de website profesional (5-7 páginas)
-- Creación de Google Business Profile
-- Setup de LinkTree
-
-**Resultado:**
-```
-Base digital sólida lista para trabajar
-```
+**Entregable:**
+- Google Business Profile 100% configurado
+- Reporte de auditoría inicial
 
 ---
 
 **PASO 2: MAGNETIZACIÓN LOCAL**
 
-**Número grande:** 02
-**Imagen:** `09_paso2_magnetizacion_local.png`
+**Imagen:** `/assets/generated/09_paso2_magnetizacion_local.png`
+
+**Número:** 02
+
+**Título:** Magnetización Local
 
 **Descripción:**
-```
-Te optimizamos para ser encontrado en tu zona
-```
+Activamos keywords locales, optimizamos tu perfil para búsquedas específicas de tu ciudad, y configuramos áreas de cobertura estratégicas. Tu negocio comienza a aparecer donde tus clientes buscan.
 
-**Qué hacemos:**
-- Investigación de 10 keywords estratégicas
-- Optimización de categorías y servicios
-- Configuración de áreas de cobertura
-- Benchmarking de competencia
-- Estructura técnica SEO correcta
-- Schema markup básico
-
-**Resultado:**
-```
-Visible para clientes en tu zona específica
-```
+**Entregable:**
+- Keywords locales activados
+- Áreas de cobertura optimizadas
 
 ---
 
 **PASO 3: CONFIANZA VISUAL**
 
-**Número grande:** 03
-**Imagen:** `10_paso3_confianza_visual.png`
+**Imagen:** `/assets/generated/10_paso3_confianza_visual.png`
+
+**Número:** 03
+
+**Título:** Confianza Visual
 
 **Descripción:**
-```
-Creamos la imagen profesional que convierte
-```
+Subimos fotos profesionales, implementamos estrategia de reseñas, y creamos posts semanales optimizados. Tu perfil transmite autoridad y profesionalismo.
 
-**Qué hacemos:**
-- Diseño responsive (mobile + desktop)
-- Optimización de fotos de servicios
-- Fotos de verificación profesionales
-- Avatar y portada para GBP
-- Meta descriptions optimizadas
-- Contenido que convierte visitas en clientes
-
-**Resultado:**
-```
-Presencia digital que genera confianza instantánea
-```
+**Entregable:**
+- 10-15 fotos profesionales
+- Estrategia de reseñas activa
+- Posts semanales (primeras 4 semanas)
 
 ---
 
 **PASO 4: ACTIVACIÓN 24/7**
 
-**Número grande:** 04
-**Imagen:** `11_paso4_activacion_247.png`
+**Imagen:** `/assets/generated/11_paso4_activacion_247.png`
+
+**Número:** 04
+
+**Título:** Activación 24/7
 
 **Descripción:**
-```
-Tu sistema imán empieza a trabajar
-```
+Configuramos mensajería directa, respuestas automáticas, tracking de llamadas, y te entregamos el dashboard de métricas. Tu GBP trabaja mientras duermes.
 
-**Qué hacemos:**
-- Verificación de Google Business Profile
-- Publicación completa del website
-- Entrega de todas las credenciales
-- Video tutorial de gestión
-- Guía de gestión de reseñas
-- Checklist de mantenimiento
-
-**Resultado:**
-```
-Sistema completo 100% tuyo trabajando automáticamente
-```
+**Entregable:**
+- Mensajería directa activa
+- Dashboard de métricas
+- Capacitación final
 
 ---
 
-### SECCIÓN 7: ENTREGABLES
+### **SECCIÓN 7: NUESTRO EQUIPO** ⭐ NUEVA
 
-**Background:** Blanco
-
-**H2:**
+**Título (H2):**
 ```
-Qué Incluye Exactamente el Sistema Imán Local™
+Conoce al Equipo Que Hará Crecer Tu Negocio
 ```
 
-**Layout:** 3 columnas con checklists
+**Subtítulo:**
+```
+No somos una agencia anónima. Somos un equipo real de expertos hispanos que entienden tu realidad y hablan tu idioma.
+```
 
-**COLUMNA 1: 🌐 PRESENCIA DIGITAL COMPLETA**
+**Layout:** Grid de 4 columnas en desktop (2x2), 1 columna en mobile
 
-**Website Profesional:**
-- 5-7 páginas (Home + Services + Locations + About + Contact)
-- Diseño responsive optimizado para mobile y desktop
-- Hosting configurado en Squarespace (~$16-23/mes pago directo)
-- Dominio configurado y activo
+**Miembro 1: LUIS ARROYO**
 
-**Google Business Profile:**
-- Perfil verificado y optimizado
-- Configurado con tus servicios y áreas
-- Fotos profesionales cargadas
-- Listo para recibir reseñas
+**Foto:** `/assets/team/hero_luis_consulting.png` (recortar solo a Luis)
 
-**Infraestructura Digital:**
-- Correo Gmail corporativo configurado
-- LinkTree con todos tus enlaces
-- Todas las credenciales documentadas
+**Nombre:** Luis Arroyo
+
+**Cargo:** Asesor Comercial - Implementador IA
+
+**Bio:**
+"Ayudo a contratistas hispanos a dominar su presencia digital con IA y estrategia comercial. Mi misión es que nunca más dependas de una agencia para crecer."
+
+**LinkedIn/Email:** (opcional)
 
 ---
 
-**COLUMNA 2: 📍 OPTIMIZACIÓN LOCAL**
+**Miembro 2: CARLOS CORDERO**
 
-**SEO Implementado:**
-- 10 keywords estratégicas investigadas
-- Meta descriptions optimizadas
-- Estructura técnica SEO correcta
-- Schema markup básico
+**Foto:** `/assets/team/team_carlos_cordero.png`
 
-**Posicionamiento Local:**
-- Configuración de área de cobertura
-- Categorías correctas en GBP
-- Benchmarking vs competencia
-- Optimización para búsquedas "near me"
+**Nombre:** Carlos Cordero
 
----
+**Cargo:** Marketing Expert - Ads
 
-**COLUMNA 3: 📚 CAPACITACIÓN & SOPORTE**
+**Bio:**
+"Experto en campañas publicitarias que generan clientes reales y medibles. Transformo presupuestos limitados en resultados extraordinarios."
 
-**Documentación Completa:**
-- Video tutorial de gestión (20 minutos)
-- Guía de gestión de reseñas
-- Checklist de mantenimiento mensual
-- Manual de credenciales
-
-**Soporte Incluido:**
-- 90 días de soporte durante implementación
-- Revisiones ilimitadas hasta aprobación
-- Ajustes sin costo adicional
+**LinkedIn/Email:** (opcional)
 
 ---
 
-**BONO INCLUIDO (destacado con fondo amarillo claro):**
+**Miembro 3: JUAN ARROYO**
 
-**🎁 Guía de Reviews Automáticas** (Valor: $200)
-- Plantillas de mensajes para WhatsApp/SMS
-- Script probado paso a paso
-- Video tutorial
-- Checklist mensual
+**Foto:** `/assets/team/team_juan_arroyo.png`
 
----
+**Nombre:** Juan Arroyo
 
-### SECCIÓN 8: BONOS ADICIONALES
+**Cargo:** Identidad Visual - Web Master
 
-**Background:** Gris claro (#E5E5E5)
+**Bio:**
+"Diseño identidades visuales memorables y sitios web que convierten. Tu marca merece destacar en un mercado saturado."
 
-**H2:**
-```
-Bonos Exclusivos Según Tu Necesidad
-```
-
-**Copy intro:**
-```
-Además del bono incluido, evaluamos tu situación y te asignamos el bono adicional que más te ayude:
-```
-
-**3 Cards (grid 3 columnas):**
-
-**OPCIÓN 1: Kit de Lanzamiento Digital**
-**Valor:** $350
-
-**Perfecto si:** Estás empezando y necesitas imagen profesional completa
-
-**Incluye:**
-- 50 tarjetas de presentación con QR
-- 2 playeras con logo
-- 2 gorras con logo
-- LinkTree completamente configurado
+**LinkedIn/Email:** (opcional)
 
 ---
 
-**OPCIÓN 2: Acelerador de Visibilidad**
+**Miembro 4: MARÍA CORDERO**
+
+**Foto:** `/assets/team/team_maria_cordero.png`
+
+**Nombre:** María Cordero
+
+**Cargo:** Google Business Profile - Programa de Fidelización
+
+**Bio:**
+"Optimizo tu GBP y creo programas que convierten clientes en fans leales. Me aseguro de que cada cliente logre sus objetivos en 90 días."
+
+**LinkedIn/Email:** (opcional)
+
+---
+
+### **SECCIÓN 8: ENTREGABLES**
+
+**Título (H2):**
+```
+Qué Recibes Exactamente
+```
+
+**Subtítulo:**
+```
+Todo queda en tu propiedad. Sin letra pequeña. Sin sorpresas.
+```
+
+**Layout:** Lista con checkmarks (2 columnas en desktop)
+
+**Entregables Incluidos:**
+
+✅ **Google Business Profile 100% Configurado**
+- NAP consistency verificado
+- Categorías estratégicas optimizadas
+- Horarios y servicios completos
+
+✅ **10-15 Fotos Profesionales**
+- Fotos de tu trabajo
+- Fotos del equipo
+- Fotos de antes/después
+
+✅ **Estrategia de Reseñas**
+- Sistema para solicitar reseñas
+- Plantillas de respuesta
+- Gestión de reseñas negativas
+
+✅ **Posts Semanales (Primeras 4 Semanas)**
+- Contenido optimizado para búsqueda local
+- Imágenes profesionales
+- CTAs estratégicos
+
+✅ **Mensajería Directa Configurada**
+- Respuestas automáticas
+- Plantillas de respuesta
+- Notificaciones activadas
+
+✅ **Dashboard de Métricas**
+- Tracking de llamadas
+- Tracking de visitas al sitio
+- Tracking de solicitudes de direcciones
+
+✅ **Capacitación Final (1 hora)**
+- Cómo mantener tu GBP tú mismo
+- Mejores prácticas
+- Respuestas a tus preguntas
+
+✅ **Soporte 30 Días Post-Implementación**
+- Email y WhatsApp
+- Respuesta en 24 horas
+- Ajustes menores incluidos
+
+---
+
+### **SECCIÓN 9: BONOS**
+
+**Título (H2):**
+```
+Bonos Incluidos (Valor $1,500)
+```
+
+**Layout:** Cards con valor destacado
+
+**BONO 1: AUDITORÍA GRATUITA DE COMPETENCIA**
+
 **Valor:** $300
 
-**Perfecto si:** Quieres resultados inmediatos mientras el SEO trabaja
+**Descripción:**
+Analizamos los Google Business Profiles de tus 3 principales competidores y te mostramos exactamente qué están haciendo bien (y qué puedes hacer mejor).
+
+**Incluido:** ✅ SÍ
+
+---
+
+**BONO 2: PLANTILLAS DE POSTS PARA 12 MESES** ⭐ NUEVO
+
+**Valor:** $500
+
+**Descripción:**
+52 plantillas de posts optimizados para GBP (1 por semana durante 1 año). Solo personalizas con tus fotos y publicas.
+
+**Incluido:** ✅ SÍ
+
+---
+
+**BONO 3: GUÍA DE FOTOS PROFESIONALES CON SMARTPHONE** ⭐ NUEVO
+
+**Valor:** $200
+
+**Descripción:**
+Aprende a tomar fotos profesionales de tu trabajo con tu smartphone. Iluminación, ángulos, edición básica—todo explicado paso a paso.
+
+**Incluido:** ✅ SÍ
+
+---
+
+**BONOS OPCIONALES (Adicionales):**
+
+**BONO 4: SITIO WEB BÁSICO (1 PÁGINA)**
+
+**Valor:** $800
+
+**Descripción:**
+Landing page profesional con formulario de contacto, integrada con tu GBP. Hosting incluido por 1 año.
+
+**Precio adicional:** $500 (ahorro de $300)
+
+---
+
+**BONO 5: CAMPAÑA DE GOOGLE ADS (CONFIGURACIÓN)**
+
+**Valor:** $700
+
+**Descripción:**
+Configuración completa de campaña de Google Ads para búsquedas locales. Incluye keywords, anuncios, y tracking. (Presupuesto de ads no incluido)
+
+**Precio adicional:** $400 (ahorro de $300)
+
+---
+
+**BONO 6: PROGRAMA DE FIDELIZACIÓN BÁSICO**
+
+**Valor:** $600
+
+**Descripción:**
+Sistema simple de puntos/recompensas para convertir clientes en fans leales. Incluye plantillas de comunicación y seguimiento.
+
+**Precio adicional:** $300 (ahorro de $300)
+
+---
+
+### **SECCIÓN 10: GARANTÍA**
+
+**Título (H2):**
+```
+Nuestra Garantía de Propiedad Total
+```
+
+**Layout:** Card destacado con borde rojo
+
+**Contenido:**
+
+**100% TUYO, DESDE EL DÍA UNO**
+
+A diferencia de las agencias tradicionales que mantienen el control de tu perfil, nosotros te damos acceso completo desde el primer día.
+
+**Lo que garantizamos:**
+
+✅ **Acceso Total:** Eres el propietario verificado de tu Google Business Profile
+
+✅ **Sin Dependencias:** Puedes mantenerlo tú mismo después de los 90 días
+
+✅ **Sin Contratos Largos:** Sin permanencia. Sin penalizaciones por cancelar.
+
+✅ **Capacitación Incluida:** Te enseñamos el sistema mientras lo implementamos
+
+✅ **Soporte Post-Implementación:** 30 días de soporte incluido
+
+**Callout:**
+```
+🔒 PROMESA: Si en cualquier momento decides que no es para ti, te quedas con todo lo que hemos construido. Sin letra pequeña. Sin trucos.
+```
+
+---
+
+### **SECCIÓN 11: PRECIO / INVERSIÓN**
+
+**Título (H2):**
+```
+Inversión en Tu Crecimiento
+```
+
+**Subtítulo:**
+```
+Menos de lo que gastas en volantes en 3 meses. Pero con resultados que duran años.
+```
+
+**Layout:** Tabla de valor (2 columnas)
+
+**TABLA DE VALOR:**
+
+| Lo Que Gastas Ahora (3 Meses) | Sistema Imán Local™ (90 Días) |
+|--------------------------------|--------------------------------|
+| Volantes: $300-500 | ✅ Inversión única: **$2,997** |
+| Anuncios Facebook: $500-800 | ✅ Sin costos mensuales recurrentes |
+| Referidos/Comisiones: $1,000+ | ✅ Todo queda en tu propiedad |
+| **Total: $1,800-2,300** | ✅ Genera leads 24/7 por años |
+| Resultados: Inconsistentes | ✅ Resultados medibles y escalables |
+
+**PRECIO DESTACADO:**
+
+**Inversión Total: $2,997**
+
+**O 3 pagos de $1,099**
 
 **Incluye:**
-- 30 días de asesoría en Google Ads
-- Guía de keywords para publicidad
-- Estrategia de presupuesto recomendada
-- Setup inicial de campaña
+- 90 días de implementación completa
+- Todos los entregables listados
+- 3 bonos ($1,000 de valor)
+- Soporte 30 días post-implementación
+- Capacitación final
 
----
+**CTA Primario:** "Agenda tu Auditoría Gratuita" (rojo #EF4125)
 
-**OPCIÓN 3: Refresh de Identidad Visual**
-**Valor:** $350
+**CTA Secundario:** "Hablar con un Asesor" (outline rojo)
 
-**Perfecto si:** Tu logo/marca actual no refleja profesionalismo
-
-**Incluye:**
-- Actualización o rediseño de logo
-- Manual básico de marca
-- Reforzamiento de identidad visual
-- Vía Customize It (empresa aliada)
-
----
-
-### SECCIÓN 9: GARANTÍA
-
-**Background:** Blanco
-
-**H2:**
+**Callout:**
 ```
-Garantía Total de Propiedad
-```
-
-**Copy intro:**
-```
-Entendemos que invertir $3,300 en tu presencia digital es una decisión importante. Por eso garantizamos tu inversión de forma única:
-```
-
-**Callout Box grande (fondo gradiente rojo-amarillo claro):**
-
-```
-🛡️ AL FINAL DE LOS 90 DÍAS RECIBES:
-
-✓ Todas las credenciales (Gmail, Squarespace, GBP)
-✓ Acceso completo a todos tus activos digitales
-✓ Documentación completa de tu sistema
-✓ Propiedad 100% de website, dominio y perfiles
-```
-
-**Garantía en texto:**
-```
-Si no puedes acceder a algún activo digital al final de los 90 días, lo resolvemos inmediatamente o te reembolsamos la parte proporcional.
-```
-
-**Diferenciador (bold):**
-```
-A diferencia de otras agencias que te cobran $500-1,200 mensuales eternamente y nunca eres dueño de nada, con nosotros TODO es tuyo. Si decides dejar de trabajar con C3 Marketing después de los 90 días, te quedas con todo tu sistema funcionando.
+💰 PERSPECTIVA: $2,997 ÷ 90 días = $33/día. Menos de lo que gastas en gasolina. Pero con un ROI que puede cambiar tu negocio.
 ```
 
 ---
 
-### SECCIÓN 10: PRECIO E INVERSIÓN
+### **SECCIÓN 12: TESTIMONIOS**
 
-**Background:** Gris claro (#E5E5E5)
-
-**H2:**
+**Título (H2):**
 ```
-Inversión en Tu Presencia Digital
+Lo Que Dicen Nuestros Clientes
 ```
 
-**Tabla de Valor:**
+**Layout:** Grid de 3 columnas (1 columna en mobile)
 
-| Componente | Valor |
-|------------|-------|
-| Website profesional (5-7 páginas) | $1,500 |
-| Google Business Profile verificado | $1,200 |
-| Optimización SEO + Keywords | $800 |
-| Capacitación + Documentación | $300 |
-| Bono: Guía de Reviews | $200 |
-| **VALOR TOTAL** | **$4,000** |
+**TESTIMONIO 1:**
+
+**Nombre:** Miguel Hernández
+
+**Negocio:** Hernández Landscaping (San Diego, CA)
+
+**Foto:** (placeholder o foto real si disponible)
+
+**Testimonio:**
+"Antes de trabajar con C3, dependía 100% de referidos. Ahora aparezco en los primeros 3 resultados de Google Maps y recibo entre 8-12 llamadas por semana de clientes nuevos. La inversión se pagó sola en el primer mes."
+
+**Resultado destacado:** +150% en leads mensuales
 
 ---
 
-**Precio Destacado (muy grande, centrado):**
+**TESTIMONIO 2:**
 
-```
-💰 TU INVERSIÓN HOY: $3,300
-```
+**Nombre:** Rosa Martínez
 
-**Ahorro:**
-```
-Ahorras $700 al iniciar ahora
-```
+**Negocio:** Martínez Cleaning Services (Houston, TX)
 
----
+**Foto:** (placeholder o foto real si disponible)
 
-**Opciones de Pago (3 cards):**
+**Testimonio:**
+"Lo que más me gustó es que me enseñaron cómo funciona todo. Ahora yo misma actualizo mi perfil y respondo a las reseñas. Ya no dependo de nadie y mi negocio sigue creciendo."
 
-**Opción A: Pago Completo**
-```
-$3,135
-(5% descuento por pago anticipado)
-```
-
-**Opción B: 3 Pagos Mensuales**
-```
-$1,100 por mes
-durante implementación
-```
-
-**Opción C: Plan Personalizado**
-```
-Según tu situación específica
-```
+**Resultado destacado:** De 8 a 47 reseñas en 90 días
 
 ---
 
-**Nota de Hosting (pequeña, gris):**
-```
-+ Hosting Squarespace: ~$16-23/mes (pago directo al proveedor - eres dueño desde día 1)
-```
+**TESTIMONIO 3:**
+
+**Nombre:** Carlos Ramírez
+
+**Negocio:** Ramírez Plumbing (Phoenix, AZ)
+
+**Foto:** (placeholder o foto real si disponible)
+
+**Testimonio:**
+"Pensé que Google Business Profile era solo para negocios grandes. Luis y su equipo me demostraron que es la herramienta #1 para contratistas como yo. Ahora compito de igual a igual con empresas que llevan 20 años en el mercado."
+
+**Resultado destacado:** Pasó de invisible a top 3 en su ciudad
 
 ---
 
-**Urgencia Ética (callout box con borde amarillo):**
+### **SECCIÓN 13: FAQ + CTA FINAL**
 
-```
-⏰ CONDICIÓN ESPECIAL:
-
-Solo disponible para los primeros 10 negocios de servicios que inicien este mes.
-
-¿Por qué esta limitación?
-Solo podemos manejar la implementación de 10 negocios simultáneamente para garantizar calidad y atención personalizada. Después de estos 10 espacios, el precio base aumenta a $3,800.
-```
-
----
-
-### SECCIÓN 11: TESTIMONIOS
-
-**Background:** Blanco
-
-**H2:**
-```
-Resultados Reales de Negocios Como el Tuyo
-```
-
-**Layout:** 3 cards testimonios (grid 3 columnas, stack mobile)
-
-**Formato de cada testimonio:**
-
-```
-[Foto del cliente - placeholder si no hay foto real]
-
-"[Quote del cliente sobre su transformación]"
-
-- [Nombre], [Tipo de negocio]
-📍 [Ciudad, CA]
-
-Resultado:
-• [Métrica específica 1]
-• [Métrica específica 2]
-• [Beneficio emocional]
-```
-
-**Nota:** Usar testimonios reales si están disponibles. Si no, usar casos de estudio sin foto enfocados en métricas objetivas (GBP verificado, website activo, tiempo de implementación).
-
-**Ejemplo de placeholder:**
-
-```
-"Antes perdía contratos porque no aparecía en Google. Ahora mi perfil está verificado y mi website se ve tan profesional como la competencia grande."
-
-- Juan Martínez, Martinez Landscaping
-📍 San Jose, CA
-
-Resultado:
-• GBP verificado en 4 semanas
-• Website profesional activo
-• Ya no depende solo de referencias
-```
-
----
-
-### SECCIÓN 12: FAQ + CTA FINAL
-
-**Background:** Gris claro (#E5E5E5)
-
-**H2:**
+**Título (H2):**
 ```
 Preguntas Frecuentes
 ```
 
-**Layout:** Accordion (9 preguntas)
+**Layout:** Accordion (expandible/colapsable)
 
-**1. ¿Para qué tipo de negocios funciona esto?**
+**FAQ 1: ¿Necesito tener un sitio web?**
 
+**Respuesta:**
+No. Google Business Profile funciona de manera independiente. Sin embargo, si tienes un sitio web, lo integramos para maximizar resultados. Si no tienes, podemos crear uno básico por un costo adicional (ver Bonos Opcionales).
+
+---
+
+**FAQ 2: ¿Qué pasa si ya tengo un Google Business Profile?**
+
+**Respuesta:**
+Perfecto. Hacemos una auditoría completa, corregimos errores, y optimizamos lo que ya tienes. La mayoría de los perfiles existentes tienen problemas técnicos que limitan su visibilidad—nosotros los arreglamos.
+
+---
+
+**FAQ 3: ¿Cuánto tiempo toma ver resultados?**
+
+**Respuesta:**
+Los primeros resultados (aparecer correctamente en Google Maps) los ves en las primeras 2-3 semanas. Resultados consistentes de leads (llamadas, mensajes) generalmente comienzan en el mes 2. A los 90 días, tu perfil está completamente optimizado y generando leads de forma predecible.
+
+---
+
+**FAQ 4: ¿Qué pasa después de los 90 días?**
+
+**Respuesta:**
+Tu Google Business Profile queda 100% en tu propiedad y tú puedes mantenerlo. Te enseñamos cómo hacerlo en la capacitación final. Si prefieres que nosotros sigamos gestionándolo, ofrecemos planes de mantenimiento mensual (opcional, no obligatorio).
+
+---
+
+**FAQ 5: ¿Funciona para cualquier tipo de negocio de contratista?**
+
+**Respuesta:**
+Sí. Landscaping, plomería, electricidad, limpieza, pintura, HVAC, carpintería, techado—cualquier servicio local. El sistema es el mismo, solo adaptamos keywords y categorías a tu industria específica.
+
+---
+
+**FAQ 6: ¿Necesito saber de tecnología?**
+
+**Respuesta:**
+No. Nosotros hacemos todo el trabajo técnico. Tú solo necesitas proporcionarnos fotos de tu trabajo y responder algunas preguntas sobre tu negocio. Si sabes usar WhatsApp, puedes mantener tu GBP después de los 90 días.
+
+---
+
+**FAQ 7: ¿Qué pasa si no estoy satisfecho?**
+
+**Respuesta:**
+Si en los primeros 30 días decides que el sistema no es para ti, te quedas con todo lo que hemos construido (perfil configurado, fotos subidas, etc.) sin penalizaciones. No hay contratos de permanencia.
+
+---
+
+**FAQ 8: ¿Ofrecen garantía de resultados?**
+
+**Respuesta:**
+Garantizamos que tu perfil estará 100% optimizado según las mejores prácticas de Google. Sin embargo, no podemos garantizar un número específico de leads porque depende de factores como tu ubicación, competencia, y calidad de tu servicio. Lo que sí garantizamos es que estarás en la mejor posición posible para competir.
+
+---
+
+**FAQ 9: ¿Cómo empiezo?**
+
+**Respuesta:**
+Agenda una auditoría gratuita de 30 minutos. Revisamos tu presencia actual en Google, analizamos a tu competencia, y te mostramos exactamente qué necesitas para dominar tu mercado local. Sin compromiso. Sin presión de venta.
+
+---
+
+**CTA FINAL (Destacado):**
+
+**Título:**
 ```
-El Sistema Imán Local™ está diseñado específicamente para negocios de servicios locales (home services) como landscaping, plomería, HVAC, electricidad, construcción, pintura, etc. Si tienes 4+ empleados y quieres dejar de depender solo de referencias, esto es para ti.
+¿Listo Para Dominar Google en Tu Ciudad?
+```
+
+**Subtítulo:**
+```
+Agenda tu auditoría gratuita y descubre exactamente qué necesitas para aparecer primero en Google Maps.
+```
+
+**CTA Primario:** "Agenda tu Auditoría Gratuita Ahora" (rojo #EF4125, grande)
+
+**CTA Secundario:** "Envíanos un WhatsApp" (outline rojo)
+
+**Texto adicional:**
+```
+📞 Llamadas y WhatsApp en español
+🕐 Respuesta en menos de 2 horas (horario laboral)
+🇺🇸 Atendemos todo Estados Unidos
 ```
 
 ---
 
-**2. ¿Realmente seré dueño de todo?**
+### **FOOTER**
 
-```
-Sí, 100%. Al final de los 90 días recibes todas las credenciales: Gmail, Squarespace, Google Business Profile. Todo está a tu nombre desde el principio. Si dejas de trabajar con nosotros, te quedas con todo funcionando.
-```
+**Layout:** 3 columnas en desktop, stacked en mobile
 
----
+**Columna 1: Logo + Descripción**
+- Logo C3 (blanco si fondo oscuro, naranja si fondo claro)
+- "Ayudamos a contratistas hispanos a dominar Google Business Profile y atraer clientes locales de forma predecible."
 
-**3. ¿Por qué 90 días y no más rápido?**
-
-```
-La verificación de Google Business Profile toma 3-5 semanas (especialmente para negocios sin sede física). La optimización SEO necesita tiempo para implementarse correctamente. 90 días es el tiempo real para hacer las cosas bien, no para cobrar más meses de mensualidades.
-```
-
----
-
-**4. ¿Qué pasa después de los 90 días?**
-
-```
-Tu sistema sigue trabajando 100% solo. No hay mensualidades obligatorias. Solo pagas el hosting de Squarespace (~$16-23/mes directo al proveedor). Si quieres mantenimiento opcional (actualizar contenido, gestionar reseñas, etc.), podemos ofrecer planes desde $300/mes, pero NO es obligatorio.
-```
-
----
-
-**5. ¿Necesito saber de tecnología?**
-
-```
-No. Todo el proceso técnico lo manejamos nosotros. Tú solo necesitas aprobar diseños y proveer fotos de tus servicios. Al final te capacitamos para las tareas básicas (responder reseñas, actualizar horarios), pero son cosas simples.
-```
-
----
-
-**6. ¿Funciona si no tengo oficina física?**
-
-```
-Sí. Tenemos experiencia específica verificando negocios de área de servicio (sin dirección física visible). El proceso toma ~5 semanas vs ~3 semanas con oficina, pero funciona perfecto.
-```
-
----
-
-**7. ¿Incluye publicidad en Google?**
-
-```
-El sistema te deja ads-ready desde día 1, pero la inversión en publicidad es adicional y opcional. Puedes empezar orgánico (gratis) o acelerar con ads cuando quieras (presupuesto sugerido: $500-1,000/mes).
-```
-
----
-
-**8. ¿Qué pasa si no estoy satisfecho?**
-
-```
-Durante los 90 días hacemos revisiones ilimitadas hasta tu aprobación. Al final, si no tienes acceso a todos tus activos digitales como prometimos, te reembolsamos la parte proporcional.
-```
-
----
-
-**9. ¿Por qué solo 10 espacios al mes?**
-
-```
-Cada implementación requiere atención personalizada: brief detallado, diseño custom, verificación manual, capacitación 1-on-1. Para mantener calidad, limitamos a 10 implementaciones simultáneas.
-```
-
----
-
-### CTA FINAL (grande, centrado, fondo blanco)
-
-**H2:**
-```
-Estás a Una Llamada de Convertirte en Visible
-```
-
-**Copy:**
-```
-Si has llegado hasta aquí, probablemente el Sistema Imán Local™ tiene sentido para tu negocio.
-
-El siguiente paso es simple:
-```
-
-**CTA Principal (botón muy grande, rojo):**
-```
-📞 Agendar Llamada de Diagnóstico Gratuita
-```
-
-**Qué Pasa en la Llamada:**
-
-```
-30 minutos donde:
-
-✓ Analizamos tu situación específica
-✓ Identificamos tus obstáculos actuales
-✓ Verificamos si eres candidato ideal
-✓ Respondemos todas tus preguntas
-✓ Si encajamos, diseñamos tu plan de 90 días
-
-No es una llamada de venta agresiva. Es una conversación profesional para determinar si podemos ayudarte.
-```
-
----
-
-## 🧭 NAVBAR (Sticky)
-
-**Background:** Blanco con sombra sutil
-**Position:** Fixed top
-
-**Contenido:**
-- **Izquierda:** Logo C3 (`c3white200x200.svg` con fondo de color o versión naranja si fondo blanco)
-- **Derecha:** CTA "Agenda tu Auditoría Gratuita" (botón rojo)
-
-**Responsive:**
-- Desktop: Logo + CTA
-- Mobile: Logo más pequeño + CTA compacto
-
----
-
-## 🦶 FOOTER
-
-**Background:** Gris oscuro (#58595B)
-**Color texto:** Blanco
-
-**Contenido:**
-
-**Columna 1: Logo + Tagline**
-- Logo C3 blanco
-- "De invisible a visible. En 90 días."
-- "Sistema Imán Local™ - C3 Marketing"
-
-**Columna 2: Contacto**
-- **Email:** luis@c3marketinghub.com
-- **Web:** c3localmarketing.com
-- **Teléfono:** [Agregar número]
-
-**Columna 3: Enlaces Rápidos**
+**Columna 2: Enlaces Rápidos**
+- Inicio
 - Cómo Funciona
-- Beneficios
-- Precio
+- Precios
+- Testimonios
 - FAQ
-- Agendar Llamada
+- Contacto
 
-**Copyright (centrado, abajo):**
+**Columna 3: Contacto**
+- Email: contacto@c3marketing.com (placeholder)
+- Teléfono: (555) 123-4567 (placeholder)
+- WhatsApp: (555) 123-4567 (placeholder)
+- Horario: Lun-Vie 9am-6pm PST
+
+**Columna 4: Redes Sociales** (opcional)
+- Facebook
+- Instagram
+- LinkedIn
+- YouTube
+
+**Copyright:**
 ```
 © 2025 C3 Marketing. Todos los derechos reservados.
+Sistema Imán Local™ es una marca registrada de C3 Marketing.
 ```
-
----
-
-## 🎯 CTAS ESTRATÉGICOS
-
-**Ubicaciones de CTAs:**
-1. Navbar (siempre visible)
-2. Hero (2 CTAs: primario + secundario)
-3. Después de Problema
-4. Después de Timeline
-5. Después de Precio
-6. CTA Final (grande)
-
-**Texto consistente:**
-- "Agendar Llamada de Diagnóstico Gratuita"
-- "Agenda tu Auditoría Gratuita"
-
-**Estilo:**
-- Botón rojo (#EF4125)
-- Texto blanco
-- Hover: Rojo más oscuro (#D63820)
-- Border radius: 8px
-- Padding: 16px 32px
-- Font: Poppins SemiBold 16px
-
----
-
-## 📱 RESPONSIVE DESIGN
-
-**Breakpoints:**
-- Mobile: < 640px
-- Tablet: 640px - 1024px
-- Desktop: > 1024px
-
-**Mobile-first:**
-- Stack todas las secciones verticalmente
-- Grid 3 columnas → 1 columna
-- Imágenes full-width
-- Texto centrado
-- CTAs full-width
-- Navbar compacto
-
-**Desktop:**
-- Grid 2-3 columnas según sección
-- Imágenes lado a lado con texto
-- Texto alineado izquierda
-- CTAs inline
-- Navbar completo
 
 ---
 
 ## ✅ CHECKLIST DE IMPLEMENTACIÓN
 
-**Antes de empezar:**
-- [ ] Descargar assets del repositorio usando `lov-download-to-repo`
-- [ ] Verificar que todas las 18 imágenes están disponibles
-- [ ] Confirmar logos C3 en formato SVG
-
-**Durante desarrollo:**
+### Fase 1: Setup Inicial
+- [ ] Conectar repositorio GitHub con Lovable
+- [ ] Descargar assets con `lov-download-to-repo`
 - [ ] Configurar paleta de colores C3 en CSS
 - [ ] Importar fuentes Google (Poppins + Open Sans)
-- [ ] Crear navbar sticky con logo + CTA
-- [ ] Implementar las 12 secciones en orden
-- [ ] Agregar accordion para FAQ
-- [ ] Crear footer completo
-- [ ] Configurar responsive mobile-first
-- [ ] Agregar smooth scroll para CTAs
+- [ ] Crear componente Navbar sticky
 
-**Antes de entregar:**
-- [ ] Verificar que todas las imágenes cargan correctamente
-- [ ] Probar todos los CTAs
-- [ ] Revisar responsive en mobile/tablet/desktop
-- [ ] Verificar contraste de colores (accesibilidad)
-- [ ] Optimizar imágenes para web
-- [ ] Agregar alt text a todas las imágenes
+### Fase 2: Secciones 1-7
+- [ ] Sección 1: Hero (asimétrico, foto Luis con contratista)
+- [ ] Sección 2: Problema (5 pasos + 3 costos ocultos)
+- [ ] Sección 3: Solución (4 razones + mockups)
+- [ ] Sección 4: Timeline 90 días (3 fases con imágenes)
+- [ ] Sección 5: Beneficios (grid 6 cards)
+- [ ] Sección 6: 4 Pasos (cards numerados con imágenes)
+- [ ] Sección 7: Nuestro Equipo (4 miembros con fotos) ⭐ NUEVA
 
----
+### Fase 3: Secciones 8-13
+- [ ] Sección 8: Entregables (lista con checkmarks)
+- [ ] Sección 9: Bonos (1 incluido + 3 opcionales)
+- [ ] Sección 10: Garantía (card destacado)
+- [ ] Sección 11: Precio/Inversión (tabla de valor)
+- [ ] Sección 12: Testimonios (grid 3 columnas)
+- [ ] Sección 13: FAQ (accordion) + CTA Final
 
-## 📚 ARCHIVOS DE REFERENCIA
-
-**En este repositorio:**
-- `/docs/Landing_Content_Sistema_Iman_Local.md` - Contenido completo detallado
-- `/docs/Brief_Manu_Landing_Framer.md` - Brief original con especificaciones
-- `/FIGMA_TEMPLATE_ANALYSIS.md` - Análisis del template Figma
-- `/COLORES_Y_DISENO_LANDING.md` - Guía de colores y diseño
-- `/RUNWAY_PROMPTS.md` - Prompts usados para generar imágenes
-
----
-
-## 🚀 NOTAS FINALES
-
-**Objetivo de conversión:**
-- La landing debe convertir visitantes en llamadas agendadas
-- Cada sección debe construir sobre la anterior (problema → solución → prueba → precio → acción)
-- Los CTAs deben ser claros y consistentes
-- El diseño debe verse profesional pero accesible (hispano-friendly)
-
-**Tono de voz:**
-- Directo y honesto (no pretencioso)
-- Profesional pero cálido (no frío corporativo)
-- Empático con los desafíos de negocios hispanos
-- Orientado a resultados concretos (no promesas vagas)
-
-**Diferenciadores clave a destacar:**
-1. **Propiedad total** (no rentas eternas)
-2. **90 días** (tiempo real, no mensualidades infinitas)
-3. **En español** (sin barreras de idioma)
-4. **Probado con hispanos** (no teoría genérica)
+### Fase 4: Footer y Optimización
+- [ ] Footer completo (4 columnas)
+- [ ] Responsive design (mobile-first)
+- [ ] CTAs funcionales (links a calendly o formulario)
+- [ ] Optimización de imágenes (lazy loading)
+- [ ] Meta tags SEO
+- [ ] Testing cross-browser
 
 ---
 
-**¡Éxito con la implementación!** 🎉
+## 🎯 NOTAS IMPORTANTES PARA LOVABLE
+
+1. **Foto Hero:** Usar `/assets/team/hero_luis_consulting.png` - Luis asesorando a contratista (cliente de espaldas con vest guinda)
+
+2. **Sección de Equipo (NUEVA):** 
+   - 4 miembros con fotos reales
+   - Layout grid 4 columnas (2x2 en tablet, 1 en mobile)
+   - Ubicación: Después de "4 Pasos del Sistema" (sección 7)
+
+3. **Colores C3:** 
+   - Rojo #EF4125 para CTAs primarios
+   - Amarillo #F9B718 para highlights
+   - Gris #58595B para texto
+   - Gris claro #E5E5E5 para backgrounds alternos
+
+4. **Tipografía:**
+   - Poppins Bold para headings
+   - Open Sans Regular para body
+
+5. **Responsive:**
+   - Mobile-first approach
+   - Breakpoints: 640px (sm), 768px (md), 1024px (lg), 1280px (xl)
+
+6. **CTAs:**
+   - Primario: "Agenda tu Auditoría Gratuita"
+   - Secundario: "Ver Cómo Funciona" / "Hablar con un Asesor"
+   - Links: (placeholder - configurar después)
+
+7. **Imágenes:**
+   - Todas las imágenes están en `/assets/generated/` y `/assets/team/`
+   - Usar lazy loading para optimizar carga
+   - Alt text descriptivo para SEO
+
+8. **Secciones Alternas:**
+   - Secciones impares: Fondo blanco
+   - Secciones pares: Fondo gris claro #E5E5E5
+
+---
+
+## 📞 CONTACTO PARA DUDAS
+
+Si tienes dudas sobre el contenido o necesitas aclaraciones, consulta:
+- `Landing_Content_Sistema_Iman_Local.md` - Contenido original completo
+- `Brief_Manu_Landing_Framer.md` - Especificaciones técnicas
+- `FIGMA_TEMPLATE_KRONIX_ANALYSIS.md` - Análisis del template Figma
+
+---
+
+**¡TODO LISTO PARA IMPLEMENTAR!** 🚀
+
+**Costo total de assets generados:** $1.10 USD (110 créditos Runway API)
+**Imágenes totales:** 19 (1 hero + 4 equipo + 14 landing)
+**Secciones:** 13 completas
+**Palabras de contenido:** ~4,500
+
+**Tiempo estimado de implementación:** 4-6 horas
